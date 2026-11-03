@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+:root {
+  /* Backgrounds */
+  --bg-page: #F4EFE7;
+  --bg-card: #FBF8F2;
+  --bg-elevated: #FFFDF8;
+  --bg-muted: #E8E2D6;
+
+  /* Text */
+  --text-primary: #1D1C1A;
+  --text-secondary: #6B6A66;
+  --text-tertiary: #9A9893;
+  --text-inactive: #A8A7A5;
+
+  /* Borders */
+  --border-subtle: #E2DCD0;
+  --border-strong: #CDC5B5;
+
+  /* Accents */
+  --green: #3D8A5A;
+  --green-light: #C8F0D8;
+  --green-dark: #4D9B6A;
+  --coral: #B85D3E;
+  --coral-dark: #A04E33;
+  --gold: #D69327;
+
+  /* Seasons — v2: deeper, more confident. Winter goes cool (rest/cold metaphor). */
+  --winter: #3E4F6B;
+  --spring: #5C9362;
+  --summer: #D69327;
+  --autumn: #B85D3E;
+
+  /* Flow intensity — pure reds, no collision with autumn terracotta */
+  --flow-spotting: #EFC8CA;
+  --flow-light: #D46F75;
+  --flow-medium: #B43E38;
+  --flow-heavy: #8B2723;
+  --flow-bg-selected: #F9E8E7;
+}
+
+@theme inline {
+  --color-bg-page: var(--bg-page);
+  --color-bg-card: var(--bg-card);
+  --color-bg-elevated: var(--bg-elevated);
+  --color-bg-muted: var(--bg-muted);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-tertiary: var(--text-tertiary);
+  --color-text-inactive: var(--text-inactive);
+
+  --color-border-subtle: var(--border-subtle);
+  --color-border-strong: var(--border-strong);
+
+  --color-green: var(--green);
+  --color-green-light: var(--green-light);
+  --color-green-dark: var(--green-dark);
+  --color-coral: var(--coral);
+  --color-coral-dark: var(--coral-dark);
+  --color-gold: var(--gold);
+
+  --color-winter: var(--winter);
+  --color-spring: var(--spring);
+  --color-summer: var(--summer);
+  --color-autumn: var(--autumn);
+
+  --color-flow-spotting: var(--flow-spotting);
+  --color-flow-light: var(--flow-light);
+  --color-flow-medium: var(--flow-medium);
+  --color-flow-heavy: var(--flow-heavy);
+  --color-flow-bg-selected: var(--flow-bg-selected);
+
+  --font-sans: "Outfit", system-ui, sans-serif;
+}
+
+body {
+  background: var(--bg-page);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+}
